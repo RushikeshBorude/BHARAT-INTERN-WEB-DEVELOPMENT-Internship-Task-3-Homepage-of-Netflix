@@ -1,0 +1,402 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bree Serif', serif;
+}
+
+
+:root{
+	--black-color: black;
+	--red-color:#e50914;
+	--dark-ash:darkgrey;
+	--gray-color:grey;
+	--white-color:#fff;
+}
+
+body{
+	background-color: var(--dark-ash)
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+p{
+	text-align: left;
+}
+
+.header{
+	width:100%;
+	background: url(https://www.enter.co/wp-content/uploads/2022/06/does-netflix-cancel-everything.jpg) ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 540px;
+
+}
+
+.header::after{
+	content: "";
+	position: absolute;
+	background-color: rgba(1,0,1,.5);
+	z-index: 1;
+	top: 0;
+	left:0; 
+	width:100%;
+	height: 560px;
+
+}
+
+.logo{
+	position: absolute;
+	width:150px;
+	height: 100px;
+	top:0px;
+	left:70px;
+
+}
+.input{
+	width:40%;
+	height:60px;
+	font-size:15px;
+	padding-left:20px;
+	border-radius: 15px;
+}
+
+.input:focus{
+	outline: none;
+}
+
+.email-button{
+	background-color: var(--red-color);
+	padding: 14px 20px;
+	font-weight: lighter;
+	margin-left: 17px;
+border-radius: 15px;
+	font-size: 2em;
+height: 59px;
+cursor: pointer;
+	border: none;
+	text-align: center;
+	
+}
+
+.email-button:hover{
+	opacity: .9;
+}
+
+
+.full-width{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+border-radius: 11px;
+}
+
+.header-inner{
+	position: relative;
+	top:120px;
+}
+
+.cast{
+	padding-left:20px;
+	color: var(--white-color);
+	font-size: 24px;
+	width: 80%;
+}
+
+/* Buttons */
+
+.sign-up-btn{
+	border-radius: 5px;
+	position: absolute;
+	top:30px;
+	right:40px;
+	
+}
+
+.zed-index{
+	z-index: 2;
+}
+
+/* Sections */
+
+.box{
+	margin: 10px 0;
+}
+
+.section-image{
+	max-width:40%;
+	border-radius: 50px;
+	cursor: pointer;
+	padding-left: 22px;
+	height: 511px;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column{
+	flex-direction: column;
+
+}
+
+.flex-row-reverse{
+	flex-direction: row-reverse;
+	
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.flex-start{
+	align-items: flex-start;
+}
+
+.flex-inner-a{
+	width: 80%;
+	margin:50px;
+}
+/* colors */
+
+.bg-red{
+	background-color: var(--red-color)
+}
+
+.bg-black{
+	background-color: black;
+}
+.text-grey{
+	color:var(--gray-color);
+}
+
+.text-red{
+	color:red;
+}
+
+/* Font sizes */
+
+.text-xl{
+	font-size: 50px;
+	color:var(--white-color);
+	text-align: center;
+}
+
+.text-lg{
+	font-size: 34px;
+	color:var(--white-color);
+	text-align: left;
+	padding-left: 103px;
+}
+
+.text-md{
+	font-size: 20px;
+	color:var(--white-color);
+	padding:40px;
+	
+}
+
+.text-sm{
+	font-size: 18px;
+	color:var(--white-color);
+	text-align: center;
+	 
+}
+
+/* Padding */
+
+.py-md{
+	padding:12px 0;
+}
+
+.py-sm{
+	padding:6px 0;
+}
+
+.px-md1{
+	padding:55px 40px 55px 0;
+	letter-spacing: 1.2px;
+	
+}
+
+.px-md2{
+	padding:55px 0 55px 0;
+	letter-spacing: 1.2px;
+}
+
+.px-sm{
+	padding-left: 20px;
+}
+
+.pd-sm{
+	padding:5px 10px;
+}
+
+.p-width{
+	max-width:55%;
+}
+/* Footer */
+
+.footer-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding:10px 0 40px;
+	text-align: justify;
+
+justify-content: center;
+
+}
+
+.ul-list{
+	padding:10px 10px 10px 0 ;
+	padding-left: 30px;
+}
+
+.ul-list li{
+	padding-top: 20px;
+}
+
+
+.ul-list li a{
+	color:var(--dark-ash);
+}
+
+.footer-a{
+	padding: 0 20px 30px 0;
+	padding-left: 20px;	
+}
+
+.footer-a a{
+	color:var(--dark-ash);
+}
+
+.ul-list_right-a{
+	padding: 0 20px 30px 0;
+	padding-left: 20px;	
+}
+
+.ul-list_right-a a{
+	color:var(--dark-ash);
+}
+
+
+/* media query */
+
+
+@media (max-width: 850px){
+	.flex-row-reverse{
+		flex-direction: column;
+
+	}
+
+	.flex-start{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text-box{
+		max-width: 100%;
+	}
+	.flex{
+		flex-direction: column;
+	}
+
+	.section-image{
+		max-width: 100%;
+		justify-content:center;
+	}
+
+	p{
+		align-items: center;
+	}
+
+	.text-xl{
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 35px;
+
+	}
+
+	.text-lg{
+		align-items: center;
+		justify-content: center;
+		width:90%;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.text-md{
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size: 18px;
+		width:90%;
+	}
+	.text-sm{
+		font-size: 13px;
+	}
+
+	.p-width{
+		max-width: 100%;
+	}
+
+	.justify-space{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo{
+		left:20px;
+		top:5px;
+	}
+
+	.sign-up-btn{
+		right:30px;
+		top:42px;
+
+	}
+
+	.px-md1{
+		padding:0;
+		letter-spacing: 1.2px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.px-md2{
+		padding:0;
+		letter-spacing: 1.2px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo{
+		width: 20%;
+		height: 12%;
+	}
+
+	.header{
+		height: 110vh;
+	}
+	.header::after{
+		height: 110vh
+	}
+
+	.input{
+		width:50%;
+		height: 50px;
+	}
+}
